@@ -1,0 +1,20 @@
+{"programming":
+  [
+        {
+                "Hour":"08:00",
+                "Name":"Example 1",
+                "Object":"https://example2.com"
+        },
+        {
+                "Hour":"08:15",
+                "Name":"Example 2",
+                "Object":"https://example2.com"
+        },
+	
+        {
+                "Hour":"22:00",
+                "Name":"Example 3",
+                "Object":"https://example3.com"
+        }
+   ]
+}
