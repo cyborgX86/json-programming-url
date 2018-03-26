@@ -1,6 +1,6 @@
 <?php
 
-/* getChannel devuelve un array con la hora, nombre y url del canal especificado
+/* getChannel() devuelve un array con la hora, nombre y url del canal especificado
 en el archivo json en función de la hora del sistema.*/
 
 function getChannel(){
@@ -21,7 +21,6 @@ function getChannel(){
         if ($channels[0][Hour] > date ("H:i")){
           $currentChannel = end($channels);
           break;
-        //en caso contrario:
         }else{
           if($prevChannel){
             $currentChannel = $prevChannel;
@@ -44,7 +43,7 @@ function getChannel(){
   return $currentChannel;
 }
 
-/* getProgramming devuelve una lista con el contenido de la programación definida
+/* getProgramming() devuelve una lista con el contenido de la programación definida
 en el archivo json.*/
 
 function getProgramming(){
@@ -55,18 +54,18 @@ function getProgramming(){
 	   echo '<ul class="navbar-brand"
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-               aria-expanded="false"><span class="caret"></span></a>
+               		   aria-expanded="false"><span class="caret"></span></a>
 		             <ul class="dropdown-menu" role="menu">';
 	   foreach ($channels as $channel) {
-			    echo '<li>' . $channel[Hour] . ' - ' . $channel[Name] .'</li>
-			          <li class="divider"></li>';
-		 }
+		echo '<li>' . $channel[Hour] . ' - ' . $channel[Name] .'</li>
+		      <li class="divider"></li>';
+	   }
 	echo '</ul></ul>';
 	break;
 	}
 }
 
-/*refreshTime devuelve el tiempo de refresco del navegador.*/
+/*refreshTime() devuelve el tiempo de refresco del navegador.*/
 
 function refreshTime(){
 
