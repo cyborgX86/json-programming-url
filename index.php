@@ -3,7 +3,6 @@
 require_once ('functions.inc.php');
 require_once ('config.inc.php');
 
-// Inicialización de variables
 $json = file_get_contents('json/' . $fileChannels);
 $programming = json_decode($json,true);
 
@@ -41,7 +40,7 @@ $programming = json_decode($json,true);
   <div id="url">
     <?php
     echo '<iframe width="100%" height="1020 px" src="' . getChannel()[Object] . '"
-          frameborder="0" scrolling="no">';
+           frameborder="0" scrolling="no">';
     ?>
   </div>
 </div>
