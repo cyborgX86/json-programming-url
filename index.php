@@ -16,8 +16,8 @@ $programming = json_decode($json,true);
     <meta http-equiv="refresh" content="<?php echo refreshTime(); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="jquery/jquery-3.1.1.min.js"></script>
-    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <div id="container" style="width:100%; height:100%;">
