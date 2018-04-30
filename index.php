@@ -9,15 +9,15 @@ $programming = json_decode($json,true);
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <title><?php echo $titlePage; ?></title>
-    <meta http-equiv="refresh" content="<?php echo refreshTime(); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <title><?php echo $titlePage; ?></title>
+  <meta http-equiv="refresh" content="<?php echo refreshTime(); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <div id="container" style="width:100%; height:100%;">
@@ -40,7 +40,7 @@ $programming = json_decode($json,true);
   <div id="url">
     <?php
     echo '<iframe width="100%" height="1020 px" src="' . getChannel()[Object] . '"
-           frameborder="0" scrolling="no">';
+          frameborder="0" scrolling="no">';
     ?>
   </div>
 </div>
