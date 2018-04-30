@@ -10,4 +10,4 @@ $subTitleHeader = 'TV subtitle'; // subtítulo cabecera.
 
 $refreshTime = 300; // tiempo predeterminado de refresco del navegador (seg).
 
- ?>
+?>
